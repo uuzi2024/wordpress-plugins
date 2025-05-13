@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: 敬请期待
+Plugin Name: 站点临时下线
 Description: 开启后，网站将显示“网站即将上线”页面给未登录的访客。只有已登录并具有编辑权限的用户才能正常浏览网站。
 Version: 1.0
 Author: 兔哥
