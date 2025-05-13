@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: 敬请期待
+Plugin Name: 敬请期待插件
 Description: 开启后，网站将显示“网站即将上线”页面给未登录的访客。只有已登录并具有编辑权限的用户才能正常浏览网站。
 Version: 1.0
 Author: 兔哥
 */
 
-function coming_soon_mode() {
+function uuzi_coming_soon_mode() {
   if (!current_user_can('edit_themes') || !is_user_logged_in()) {
     wp_die(
       '<style>
@@ -23,4 +23,4 @@ function coming_soon_mode() {
     );
   }
 }
-add_action('get_header', 'coming_soon_mode');
+add_action('get_header', 'uuzi_coming_soon_mode');
